@@ -1,0 +1,44 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto 
+usate messe in vendita da un concessionario,
+cercando di inserire più dati possibili per evitare di dover aggiornare 
+la tabella in futuro.
+
+///////////////////////////
+
+nome tabella : 'lista_auto';
+
+id - PRIMARY_KEY - intero -  MEDIUMINT[UNIQE - NOTNULL - AUTOINCREMENT];
+numero_di_telaio- VARCHAR(17) - NOTNULL - UNIQE;
+copertina - STRINGA - VARCHAR(255) - NULL;
+marca - stringa - VARCHAR(50) - NOTNULL;
+modello - stringa - VARCHAR(100) - NOTNULL - UNIQUE;
+anno - data - YEAR - NOTNULL;
+km - intero - TINYINT - NOTNULL;
+colore_esterno - stringa - VARCHAR(50) - NOTNULL;
+colore_originale - stringa - VARCHAR(50) - NOTNULL;
+carrozzeria - stringa - VARCHAR(20) - NOTNULL;
+porte - intero -  TINYINT - NOTNULL;
+posti_a_sedere - itnero - TINYINT - NOTNULL;
+versione_per_nazione - stringa - VARCHAR(30) - NOTNULL;
+tipo_veicolo - stringa - VARCHAR(20) - NULL;
+proprietari - intero - TINYINT - NOTNULL;
+tipo_di_cambio - stringa - VARCHAR(30) - NOTNULL;
+marce - intero - TINYINT - NOTNULL;
+cilindrata - intero - TINYINT - NOTNULL;
+cilindri - intero - TINYINT - NOTNULL;
+peso_a_vuoto - intero - TINYINT - NULL;
+tipo_di_unita - stringa - VARCHAR(30) - NULL;
+alimentazione - stringa - VARCHAR(20) - NOTNULL;
+cosumo_carburante - stringa - VARCHAR(30) - NOTNULL;
+emissioni_co2 - stringa - VARCHAR(30) - NULL;
+classe_emissioni - stringa - VARCHAR(10) - NOTNULL;
+optional - stringa - TEXT - NULL;
+descrizione_aggiuntiva - stringa - TEXT - NULL
+voto - intero - TINYINT  - NULL;
+prezzo - numero decimale - FLOAT(9,2) - NOTNULL;
+valuta - stringa - VARCHAR(3) - NOTNULL;
+disponibile - booleano - TINYINT - NOTNULL;
+
+
+
+
